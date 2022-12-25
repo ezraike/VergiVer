@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+
+    int a=0, b=0, c=0, d=0, e=0, f=0, karar=0, hak=4, i=0;
+    int dizi[5]={1111,2222,3333,4444,5555}
+
+    printf("Aylik gelirinizi giriniz:");
+    scanf("%d",&a);
+    printf(" Aile uyesi sayisini yaziniz:");
+    scanf("%d",&b);
+    c=a/b;
+    printf("%d",c);
+    if (c>=15000){
+        karar= c*30/100;
+    
+    }
+    else if(c<=15000 && c>=10000){
+        karar= c*20/100;
+
+    }
+    else if(c<=10000){
+        karar= c*10/100;
+    }
+    printf("%2f miktarini herhangi bir hayir kurumuna bagislamak ister misiniz? (Evet= 1 , Hayir= 2)",karar);
+    scanf("%d",&d);
+    
+    if(d=1){
+
+        printf("Bagis yapmak istediginiz kurumu yaninda bulunan rakam degerlerine gore belirtiniz.\n (KIZILAY - 1,\n LOSEV - 2,\n TEMA - 3,\n AFAD - 4,\n UGUR MUMCU VAKFI - 5\n )\t");
+
+    }
+    
+        scanf("%d",&e);
+       
+
+        if(e=1){
+            printf("Bağışınız yapılıyor lütfen bekleyiniz.");
+            for(i=0;i>=3;i++){
+                printf("%d",i);
+                usleep(1);
+            printf("Bagisiniz basariyla %d kodlu KIZILAY kurumuna yapilmistir.",dizi[1]);
+            }
+            
+            
+            }
+        else if(e=2){
+            printf("Bağışınız yapılıyor lütfen bekleyiniz.");
+            for(i=0;i>=3;i++){
+                printf("%d",i);
+                usleep(1);
+            printf("Bagisiniz basariyla LOSEV kurumuna yapilmistir.",dizi[2]);
+            }
+
+            
+            }
+        else if(e=3){
+            printf("Bağışınız yapılıyor lütfen bekleyiniz.");
+            for(i=0;i>=3;i++){
+                printf("%d",i);
+                usleep(1);
+            printf("Bagisiniz basariyla TEMA kurumuna yapilmistir.",dizi[3]);
+            }
+            }
+        else if(e=4){
+            printf("Bağışınız yapılıyor lütfen bekleyiniz.");
+            for(i=0;i>=3;i++){
+                printf("%d",i);
+                usleep(1);
+            printf("Bagisiniz basariyla AFAD kurumuna yapilmistir.",dizi[4]);
+            }
+            }
+        else if(e=5){
+            printf("Bagişınız yapılıyor lütfen bekleyiniz.");
+            for(i=0;i>=3;i++){
+                printf("%d",i);
+                usleep(1);
+            printf("Bagisiniz basariyla UGUR MUMC VAKFI kurumuna yapilmistir.",dizi[5]);
+            }
+            }
+            
+    if(d=2){
+        print("Verginiz basariyla devlete tahsis edilmiştir")
+    }
+    
+    else{
+        printf("Lutfen yasam sartlarinizi yerine getirmek icin en kisa surede gelir elde edin.");
+        }
+    return 0;
+    }
+
+
